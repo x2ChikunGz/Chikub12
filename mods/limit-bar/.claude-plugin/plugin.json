@@ -1,0 +1,1 @@
+{ "name": "limit-bar", "version": "0.1.0", "description": "Usage limit bars (5-hour, 7-day, context) in a band above the message box", "types": "./types/index.d.ts" }
