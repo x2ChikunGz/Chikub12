@@ -8,3 +8,5 @@ models/
 **/work-*/
 clips/*/*.mp4
 clips/*/contact.jpg
+**/.*hf-transaction*/
+**/.hyperframes/
