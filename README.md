@@ -14,10 +14,10 @@
 - ทุก mix.py / cap.py / build.sh ใช้ path อ้างอิงจากโฟลเดอร์ตัวเองแล้ว รันจากที่ไหนก็ได้ ไม่ต้องแก้ ../lib อีก
 - **เสียงพากย์ Google AI (Gemini) TTS**: `export GEMINI_API_KEY=...` แล้ว `python3 -I tools/gemini_tts.py --list` ดูโมเดล, `python3 -I tools/gemini_tts.py "ข้อความ" out.wav --model <ชื่อ> --voice Kore --style "เล่าแบบชวนสงสัย"` (ตั้ง GEMINI_TTS_MODEL เป็นค่าเริ่มต้นได้)
 - **gTTS สำรอง (ไม่ต้องใช้คีย์)**: `python3 -I tools/tts.py "ข้อความ" out.wav` หรือ `--file script.txt` (gTTS ไทย ฟรี ไม่ต้องใช้คีย์, ปรับ `--speed`)
-- **เจนเพลง/เอฟเฟกต์ audiocraft**: `/root/ac-venv/bin/python tools/gen_audio.py music "prompt" out.wav 10` (MusicGen small ~1.5 นาที/6 วิ บน CPU) หรือ `sfx "door creak" out.wav 3` (AudioGen medium ช้ากว่า โมเดลใหญ่)
+- **เจนเพลง/เอฟเฟกต์ audiocraft** (⚠️ โมเดลเป็น CC-BY-NC ห้ามใช้ในคลิปที่สร้างรายได้): `/root/ac-venv/bin/python tools/gen_audio.py music "prompt" out.wav 10` (MusicGen small ~1.5 นาที/6 วิ บน CPU) หรือ `sfx "door creak" out.wav 3` (AudioGen medium ช้ากว่า โมเดลใหญ่)
 - **Openverse** เข้าได้แล้ว: `python3 -I tools/openverse.py whoosh 10` ดูรายการ, `--get 0 2` โหลดลง lib/assets/audio/openverse + เขียน CREDITS.md อัตโนมัติ (กรองเฉพาะ cc0/pdm/by)
 - **Agent-Reach** (ค้นคลิปไวรัล/ข้อมูลจาก YouTube, X, Reddit, เว็บ ฯลฯ): `agent-reach --help` (อยู่ที่ ~/.local/bin)
-- **VoiceStudio** (Docker, localhost:3900): `bash tools/voicestudio.sh start` แล้ว `bash tools/voicestudio.sh say "ข้อความ" out.wav` ใช้ VoxCPM2 (MIT, ใช้เชิงพาณิชย์ได้, รองรับไทย) **ห้ามกดยอมรับไลเซนส์ OmniVoice** (CC-BY-NC ห้ามใช้เชิงพาณิชย์)
+- **VoiceStudio** (Docker, localhost:3900): `bash tools/voicestudio.sh start` แล้ว `bash tools/voicestudio.sh say "ข้อความ" out.wav` ใช้ VoxCPM2 (Apache-2.0, ใช้เชิงพาณิชย์ได้, รองรับไทย) **ห้ามกดยอมรับไลเซนส์ OmniVoice** (CC-BY-NC ห้ามใช้เชิงพาณิชย์)
 - **EarShot**: `earshot make "soft whoosh" -o whoosh.wav` ทำเสียงเอฟเฟกต์ทันทีไม่ใช้โมเดล (คลัง 252 เสียง, `earshot sounds` ดูรายการ); `earshot timeline clip.mp4` ตรวจความดัง/ช่องเงียบ/เสียงตรงรอยตัดไหม (ใช้ตรวจคลิปก่อนส่ง); `earshot sheet clip.mp4` ทำภาพสรุปซาวด์
 - cap.py ใช้ Chrome ที่มีในเครื่อง (CHROME_PATH หรือ /usr/bin/google-chrome) ไม่ต้อง playwright install
 

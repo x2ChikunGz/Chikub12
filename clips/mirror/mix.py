@@ -12,17 +12,17 @@ def add(path,gain,at=0,flt='anull',loop=False,dur=None):
     if dur:f+=f',atrim=0:{dur:.3f},afade=t=out:st={max(0,dur-.8):.3f}:d=0.8'
     fc.append(f+f',volume={gain},adelay={int(at*1000)}|{int(at*1000)}[s{n}]');lab.append(f'[s{n}]');n+=1
 # voice (idx0): cleanup + subtle room
-inp+=['-i',os.path.join(H,'voice.wav')];fc.append('[0:a]highpass=f=75,lowpass=f=12500,acompressor=threshold=0.08:ratio=3:attack=8:release=120,loudnorm=I=-15:TP=-1.5:LRA=7,aformat=channel_layouts=stereo,asplit=2[vd][vsc]');n=1
-fc.append('[vd]asplit=2[v1][v2];[v2]aecho=0.8:0.5:60|110:0.18|0.10,volume=0.35[ve];[v1][ve]amix=inputs=2:normalize=0[vo]')
+inp+=['-i',os.path.join(H,'voice.wav')];fc.append('[0:a]highpass=f=75,lowpass=f=12500,acompressor=threshold=0.12:ratio=2:attack=12:release=160,loudnorm=I=-15:TP=-1.5:LRA=7,aformat=channel_layouts=stereo,asplit=2[vd][vsc]');n=1
+fc.append('[vd]asplit=2[v1][v2];[v2]aecho=0.8:0.5:60|110:0.18|0.10,volume=0.2[ve];[v1][ve]amix=inputs=2:normalize=0[vo]')
 beds=[]
 def bed(path,gain,a,b,flt='anull'):
     add(path,gain,a,flt+f',afade=t=in:d=1.2',loop=True,dur=b-a);beds.append(lab[-1])
 # beds (ducked by voice)
 bed(OV+'room_tone_night_decbf6f4.mp3',.18,0,D)
-bed(SF+'music_bed.wav',.20,.0,L(10)-.6,'lowpass=f=5000')
+bed(SF+'low_drone_hum.wav',.22,.0,L(10)-.6)
 bed(OV+'dark_ambience_drone_6486614e.mp3',.30,L(6)-.5,L(10)-.5)
 bed(OV+'dark_ambience_drone_6486614e.mp3',.38,HIT,LE(15)+.6)
-bed(SF+'music_bed.wav',.16,cut(17),D-0.3,'lowpass=f=4000,aresample=44100')
+bed(OV+'dark_ambience_drone_6486614e.mp3',.22,cut(17),D-0.3,'lowpass=f=3000')
 bed(SF+'candle_flame_flicker.wav',.35,0,cut(5))
 bed(SF+'low_drone_hum.wav',.30,cut(20),D)
 fx=[]
@@ -54,6 +54,6 @@ fc.append('[bd][vsc]sidechaincompress=threshold=0.04:ratio=6:attack=15:release=3
 # hard silence just before the re-hook line: duck beds 0 between L(10)-.6 and L(10)
 fc.append(f"[bdd]volume=enable='between(t,{L(10)-.7:.3f},{HIT:.3f})':volume=0.08[bds]")
 fc.append(f'{F}amix=inputs={len(fx)}:normalize=0[fx]')
-fc.append(f'[vo][bds][fx]amix=inputs=3:normalize=0,alimiter=limit=0.80,volume=0.8,atrim=0:{D},apad=whole_dur={D}[out]')
+fc.append(f'[vo][bds][fx]amix=inputs=3:normalize=0,alimiter=limit=0.9,loudnorm=I=-14:TP=-2.5:LRA=11,atrim=0:{D},apad=whole_dur={D}[out]')
 cmd=['ffmpeg','-y','-v','error']+inp+['-filter_complex',';'.join(fc),'-map','[out]','-ar','48000','-ac','2',os.path.join(H,'mix.wav')]
 r=subprocess.run(cmd,capture_output=True,text=True);print(r.stderr[-2000:] or 'ok')
