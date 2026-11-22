@@ -5,6 +5,12 @@
 เริ่มจาก clips/scroll เป็นแม่แบบ (ใหม่สุด) ไฟล์เสียงพากย์เป็น voice.flac (แปลงเป็น wav 44.1k mono ก่อนใช้)
 
 
+## ทีมงานคลิป (subagents / skill / MCP) — ใช้ตั้งแต่คลิปถัดไป
+- `.claude/agents/`: researcher, scriptwriter, voice-qa, sound-designer, video-qa
+- `.claude/skills/video-qa` + `python3 -I tools/video_qa.py <mp4>` ตรวจสเปก/ความดัง/เฟรมดำ-ค้าง/ซาวด์ + contact sheet ก่อนส่งทุกคลิป
+- Context7 MCP (`.mcp.json`, `npx @upstash/context7-mcp`) ดึงเอกสารไลบรารีล่าสุด
+- ขั้นตอนเต็มและกฎอยู่ใน CLAUDE.md
+
 ## ติดตั้ง / เครื่องมือใหม่ (tools/)
 - `bash tools/setup.sh` ติดตั้งครบ: ffmpeg, hyperframes@0.9.80, sherpa-onnx + playwright (python), โมเดล whisper small int8 (ลงที่ models/ ไม่อยู่ใน git)
 - `bash tools/new_clip.sh <ชื่อ> <ไฟล์เสียง>` สร้าง clips/<ชื่อ> จากแม่แบบ scroll + แปลง wav + ถอดเสียงเป็น segs.txt + ใส่ความยาวใน mix.py ให้อัตโนมัติ

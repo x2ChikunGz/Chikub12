@@ -16,3 +16,6 @@ clips/*/ref.wav
 clips/*/samples/
 clips/*/ref*.wav
 clips/*/vo/*.t.wav
+clips/*/qa_frames/
+clips/*/qa_contact.jpg
+clips/*/qa_report.json
