@@ -10,3 +10,6 @@ clips/*/*.mp4
 clips/*/contact.jpg
 **/.*hf-transaction*/
 **/.hyperframes/
+clips/*/try/
+clips/*/vo/
+clips/*/ref.wav

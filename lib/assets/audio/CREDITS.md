@@ -42,3 +42,10 @@
 | sfx/transition/whoosh-short.mp3 | Pixabay Content License (bundled with HyperFrames media-use skill) | Pixabay (no attribution required) |
 | sfx/transition/whoosh.mp3 | Pixabay Content License (bundled with HyperFrames media-use skill) | Pixabay (no attribution required) |
 | openverse/whoosh_eab8a6e2.mp3 | CC0 1.0 | Deep Whoosh #1 by Kinoton (https://freesound.org/people/Kinoton/sounds/351256) |
+| openverse/dark_ambience_drone_6486614e.mp3 | CC0 1.0 | spacedrone3.wav by Elektrocell (https://freesound.org/people/Elektrocell/sounds/20705) |
+| openverse/glass_crack_ddaa6340.mp3 | CC0 1.0 | Glass cracking and breaking.wav by SavReese (https://freesound.org/people/SavReese/sounds/595477) |
+| openverse/glass_crack_93438db4.mp3 | CC0 1.0 | Crack and Crunch by Aurelon (https://freesound.org/people/Aurelon/sounds/422623) |
+| openverse/horror_whisper_0862bb39.mp3 | CC0 1.0 | Four_Voices_Whispering_6.wav by geoneo0 (https://freesound.org/people/geoneo0/sounds/193812) |
+| openverse/horror_whisper_bae2b772.mp3 | CC0 1.0 | Creepy Whispering by RaspberryTickle (https://freesound.org/people/RaspberryTickle/sounds/234044) |
+| openverse/room_tone_night_decbf6f4.mp3 | CC0 1.0 | Ambience INT night room tone (lisbon).flac by corkob (https://freesound.org/people/corkob/sounds/392670) |
+| openverse/heartbeat_b61439e8.mp3 | CC0 1.0 | Four Heartbeats HQ_BeatSmith.wav by Lunardrive (https://freesound.org/people/Lunardrive/sounds/22416) |
