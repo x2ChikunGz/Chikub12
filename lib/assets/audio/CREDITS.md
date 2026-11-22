@@ -41,3 +41,4 @@
 | sfx/transition/whoosh-cinematic.mp3 | Pixabay Content License (bundled with HyperFrames media-use skill) | Pixabay (no attribution required) |
 | sfx/transition/whoosh-short.mp3 | Pixabay Content License (bundled with HyperFrames media-use skill) | Pixabay (no attribution required) |
 | sfx/transition/whoosh.mp3 | Pixabay Content License (bundled with HyperFrames media-use skill) | Pixabay (no attribution required) |
+| openverse/whoosh_eab8a6e2.mp3 | CC0 1.0 | Deep Whoosh #1 by Kinoton (https://freesound.org/people/Kinoton/sounds/351256) |

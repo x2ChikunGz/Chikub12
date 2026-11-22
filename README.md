@@ -12,6 +12,10 @@
 - `bash tools/render.sh clips/<ชื่อ>` = build + เรนเดอร์พื้นหลัง + mix.py + mux.sh ต่อกันอัตโนมัติ รอ render.done
 - `bash tools/mux.sh clips/<ชื่อ>` รวมภาพ+เสียง -> <ชื่อ>.mp4, ตรวจ codec/ขนาด (เตือนถ้าเกิน 30 MiB), ทำ contact.jpg
 - ทุก mix.py / cap.py / build.sh ใช้ path อ้างอิงจากโฟลเดอร์ตัวเองแล้ว รันจากที่ไหนก็ได้ ไม่ต้องแก้ ../lib อีก
+- **เสียงพากย์ Google TTS**: `python3 -I tools/tts.py "ข้อความ" out.wav` หรือ `--file script.txt` (gTTS ไทย ฟรี ไม่ต้องใช้คีย์, ปรับ `--speed`)
+- **เจนเพลง/เอฟเฟกต์ audiocraft**: `/root/ac-venv/bin/python tools/gen_audio.py music "prompt" out.wav 10` (MusicGen small ~1.5 นาที/6 วิ บน CPU) หรือ `sfx "door creak" out.wav 3` (AudioGen medium ช้ากว่า โมเดลใหญ่)
+- **Openverse** เข้าได้แล้ว: `python3 -I tools/openverse.py whoosh 10` ดูรายการ, `--get 0 2` โหลดลง lib/assets/audio/openverse + เขียน CREDITS.md อัตโนมัติ (กรองเฉพาะ cc0/pdm/by)
+- **Agent-Reach** (ค้นคลิปไวรัล/ข้อมูลจาก YouTube, X, Reddit, เว็บ ฯลฯ): `agent-reach --help` (อยู่ที่ ~/.local/bin)
 - cap.py ใช้ Chrome ที่มีในเครื่อง (CHROME_PATH หรือ /usr/bin/google-chrome) ไม่ต้อง playwright install
 
 ## ลำดับงานต่อคลิป
@@ -33,4 +37,4 @@
 - ซับแบบเนียน: common/caps2.js (เข้า 0.3 วิ ลอยขึ้น+จาง+เบลอ ออกจางเบา กล่องแดงขยายจากกลาง)
 - ชิป/ซับต้องอยู่ y <= ~1380 ไม่ทับซับที่ y~1500
 - ไฟล์ส่งได้ไม่เกิน ~30 MiB
-- เสียงเอฟเฟกต์: Pixabay ที่มากับ media-use + เสียงสังเคราะห์เอง (Openverse เข้าไม่ได้จากเครื่องจำลอง)
+- เสียงเอฟเฟกต์: Pixabay ที่มากับ media-use + เสียงสังเคราะห์เอง + Openverse (tools/openverse.py) + เจนเองด้วย audiocraft
