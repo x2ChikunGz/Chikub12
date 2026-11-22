@@ -13,7 +13,7 @@ start)
   for v in HTTPS_PROXY HTTP_PROXY NO_PROXY https_proxy http_proxy no_proxy; do [ -n "${!v}" ] && CA+=(-e "$v=${!v}"); done
   docker run -d --name omnivoice --network host "${CA[@]}" -e OMNIVOICE_API_KEY="$K" \
     -e OMNIVOICE_DATA_DIR=/app/omnivoice_data -v omnivoice-data:/app/omnivoice_data ghcr.io/debpalash/voicestudio:stable >/dev/null
-  until curl -s -m 3 $U/health | grep -q ok; do sleep 3; done; echo "VoiceStudio ready at $U (key in ~/.voicestudio/key)";;
+  until curl -s -m 3 $U/v1/models -H "Authorization: Bearer $K" | grep -q voxcpm2; do sleep 3; done; echo "VoiceStudio ready at $U (key in ~/.voicestudio/key)";;
 engines) curl -s $U/engines/tts -H "Authorization: Bearer $K" | python3 -c "import json,sys;[print(e['id'],'OK' if e['available'] else '-',e['display_name']) for e in json.load(sys.stdin)['backends']]";;
 say)
   T=$(mktemp --suffix .wav); E=${4:-voxcpm2}
