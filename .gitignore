@@ -15,3 +15,4 @@ clips/*/vo/
 clips/*/ref.wav
 clips/*/samples/
 clips/*/ref*.wav
+clips/*/vo/*.t.wav

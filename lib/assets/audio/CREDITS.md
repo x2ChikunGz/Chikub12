@@ -49,3 +49,6 @@
 | openverse/horror_whisper_bae2b772.mp3 | CC0 1.0 | Creepy Whispering by RaspberryTickle (https://freesound.org/people/RaspberryTickle/sounds/234044) |
 | openverse/room_tone_night_decbf6f4.mp3 | CC0 1.0 | Ambience INT night room tone (lisbon).flac by corkob (https://freesound.org/people/corkob/sounds/392670) |
 | openverse/heartbeat_b61439e8.mp3 | CC0 1.0 | Four Heartbeats HQ_BeatSmith.wav by Lunardrive (https://freesound.org/people/Lunardrive/sounds/22416) |
+| openverse/cat_hiss_22db7666.wav | CC0 1.0 | Cat hissing - Zabuhailo by Zabuhailo (https://commons.wikimedia.org/w/index.php?curid=31903363) |
+| openverse/phone_vibrate_f217c877.mp3 | CC0 1.0 | cell phone vibrate glass_loopable.wav by mobaudio (https://freesound.org/people/mobaudio/sounds/384487) |
+| openverse/cloth_slide_baece873.mp3 | CC0 1.0 | 37-cloth.wav by tilano408 (https://freesound.org/people/tilano408/sounds/445670) |

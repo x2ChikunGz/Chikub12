@@ -8,7 +8,7 @@ set -e; mkdir -p ~/.voicestudio; [ -f ~/.voicestudio/key ] || openssl rand -hex 
 K=$(cat ~/.voicestudio/key); U=http://localhost:3900
 case "$1" in
 start)
-  pgrep dockerd >/dev/null || { (dockerd >/tmp/dockerd.log 2>&1 &); until docker info >/dev/null 2>&1; do sleep 1; done; }
+  pgrep dockerd >/dev/null || { setsid nohup dockerd >/tmp/dockerd.log 2>&1 < /dev/null & until docker info >/dev/null 2>&1; do sleep 1; done; }
   docker start omnivoice >/dev/null 2>&1 || { sleep 3; docker start omnivoice >/dev/null 2>&1; } || CA=(); [ -f /root/.ccr/ca-bundle.crt ] && CA=(-v /root/.ccr/ca-bundle.crt:/etc/ssl/certs/proxy-ca.crt:ro -e SSL_CERT_FILE=/etc/ssl/certs/proxy-ca.crt -e REQUESTS_CA_BUNDLE=/etc/ssl/certs/proxy-ca.crt -e UV_NATIVE_TLS=1 -e CURL_CA_BUNDLE=/etc/ssl/certs/proxy-ca.crt)
   for v in HTTPS_PROXY HTTP_PROXY NO_PROXY https_proxy http_proxy no_proxy; do [ -n "${!v}" ] && CA+=(-e "$v=${!v}"); done
   docker run -d --name omnivoice --network host "${CA[@]}" -e OMNIVOICE_API_KEY="$K" \
