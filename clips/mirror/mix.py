@@ -54,6 +54,6 @@ fc.append('[bd][vsc]sidechaincompress=threshold=0.04:ratio=6:attack=15:release=3
 # hard silence just before the re-hook line: duck beds 0 between L(10)-.6 and L(10)
 fc.append(f"[bdd]volume=enable='between(t,{L(10)-.7:.3f},{HIT:.3f})':volume=0.08[bds]")
 fc.append(f'{F}amix=inputs={len(fx)}:normalize=0[fx]')
-fc.append(f'[vo][bds][fx]amix=inputs=3:normalize=0,alimiter=limit=0.93,atrim=0:{D},apad=whole_dur={D}[out]')
+fc.append(f'[vo][bds][fx]amix=inputs=3:normalize=0,alimiter=limit=0.80,volume=0.8,atrim=0:{D},apad=whole_dur={D}[out]')
 cmd=['ffmpeg','-y','-v','error']+inp+['-filter_complex',';'.join(fc),'-map','[out]','-ar','48000','-ac','2',os.path.join(H,'mix.wav')]
 r=subprocess.run(cmd,capture_output=True,text=True);print(r.stderr[-2000:] or 'ok')
