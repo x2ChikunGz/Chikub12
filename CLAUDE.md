@@ -10,6 +10,11 @@
 5. **sound-designer** ทำ mix.py → เรนเดอร์ (`setsid nohup ... hyperframes render --quality high`)
 6. **video-qa** (สกิล video-qa / `tools/video_qa.py`) ต้อง PASS ก่อน SendUserFile → ส่ง mp4 + แคปชั่นโพสต์ (บรรทัดแรกดึงคน, เนื้อหา, คำถามชวนคอมเมนต์, แฮชแท็ก 3 อัน)
 
+## ส่งคลิปให้ชิ (Drive อัปไฟล์ใหญ่ไม่ได้ จำกัด 10 MB; ปุ่มโหลดในแชตไม่ขึ้น)
+- ใช้หน้าโหลดบน Artifact: https://claude.ai/artifact/AH2A88aZWwQSPP9TaiZAuh (ซอร์สใน `site/`) ชิกด "เตรียมไฟล์" แล้ว "บันทึกลงเครื่อง"
+- คลิปใหม่: encode h264 ~60-70 MB → `bash tools/make_dl_parts.sh <mp4> <ชื่อ> <outdir>` → เพิ่มรายการใน `site/manifest.json` → publish ด้วย `url` ของหน้า (ไฟล์ใหม่ ≤64MB ต่อครั้ง, ชิ้นละ ≤15MB) → เช็กรายการไฟล์ → ส่งลิงก์ให้ชิ
+- สำรอง: ส่งไฟล์ ~37 MB ในแชตด้วย SendUserFile (display attach)
+
 ## กฎ
 - ภาพ: สไตล์ล็อก (กลางคืนน้ำเงินเทา, ซีเปียย้อนอดีต, เกรนชั้นเดียว alpha .045, เครดิต @เรื่องสงสัย left:54 top:176, ซับ y≈1500 ชิป y<=1380, ซับไทย+อังกฤษแบบ caps2)
 - ไลเซนส์: ห้าม MusicGen/AudioGen/OmniVoice ในคลิปจริง (NC); ใช้ VoxCPM2 (Apache-2.0); เสียง CC BY ใส่เครดิตในแคปชั่น

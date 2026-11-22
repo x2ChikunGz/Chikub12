@@ -1,0 +1,97 @@
+<title>คลังคลิป เรื่องสงสัย</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap">
+<style>
+/* layout: one narrow column, a card per clip, one big action button per card */
+:root{
+  --bg:#f2f3f9; --fg:#161a2c; --muted:#596079; --card:#ffffff; --line:#d9dcec;
+  --accent:#3a4bd0; --accent-fg:#ffffff; --ok:#1f7a4c; --bad:#b4412f; --track:#e1e4f2;
+  --font:'Kanit',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1120; --fg:#e8eaf7; --muted:#9aa1bf; --card:#171b31; --line:#2a3052;
+  --accent:#a3adff; --accent-fg:#0e1120; --ok:#6fd49b; --bad:#ff9a86; --track:#262c4d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1120; --fg:#e8eaf7; --muted:#9aa1bf; --card:#171b31; --line:#2a3052;
+  --accent:#a3adff; --accent-fg:#0e1120; --ok:#6fd49b; --bad:#ff9a86; --track:#262c4d; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 40px}
+main{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1{font-size:1.6rem;line-height:1.2;margin:0;font-weight:600;text-wrap:balance}
+.lead{margin:0;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.card h2{margin:0;font-size:1.25rem;font-weight:600}
+.meta{margin:0;color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums}
+button{font:inherit;font-weight:600;font-size:1.05rem;min-height:52px;border-radius:12px;border:0;padding:0 20px;cursor:pointer;background:var(--accent);color:var(--accent-fg)}
+button:disabled{opacity:.55;cursor:default}
+button:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
+.bar{height:10px;border-radius:99px;background:var(--track);overflow:hidden}
+.bar>i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s}
+.status{margin:0;min-height:1.5em;font-size:.95rem}
+.status.ok{color:var(--ok)} .status.bad{color:var(--bad)}
+.note{margin:0;color:var(--muted);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){.bar>i{transition:none}}
+</style>
+
+<main>
+  <header>
+    <h1>คลังคลิป เรื่องสงสัย</h1>
+    <p class="lead">กด "เตรียมไฟล์" รอให้ครบ แล้วกด "บันทึกลงเครื่อง" จะมีหน้าต่างให้ยืนยันก่อนบันทึก</p>
+  </header>
+  <section id="list" aria-live="polite"><p class="lead">กำลังโหลดรายการ…</p></section>
+  <p class="note">ไฟล์ถูกโหลดมาประกอบในเครื่องคุณ ใช้อินเทอร์เน็ตเท่าขนาดไฟล์ และควรอยู่บนหน้านี้จนเตรียมไฟล์เสร็จ</p>
+</main>
+
+<script>
+(function(){
+  var list=document.getElementById('list');
+  var dlP=(window.claude&&window.claude.use)?window.claude.use('downloads').catch(function(){return null}):Promise.resolve(null);
+  var mb=function(b){return Math.round(b/1048576)+' MB'};
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+
+  function card(clip){
+    var c=el('article','card'),h=el('h2',null,clip.title),m=el('p','meta',mb(clip.size)+' · '+clip.spec+' · '+clip.duration);
+    var bar=el('div','bar'),fill=el('i');bar.appendChild(fill);bar.hidden=true;
+    var st=el('p','status');var btn=el('button',null,'เตรียมไฟล์');btn.type='button';
+    var blob=null;
+    function say(t,cls){st.textContent=t;st.className='status'+(cls?' '+cls:'')}
+    btn.addEventListener('click',async function(){
+      if(blob){return saveIt()}
+      btn.disabled=true;bar.hidden=false;fill.style.width='0%';say('กำลังโหลดไฟล์…');
+      try{
+        var bufs=[],got=0;
+        for(var i=0;i<clip.parts.length;i++){
+          var r=await fetch(clip.parts[i]);
+          if(!r.ok)throw new Error('โหลดส่วนที่ '+(i+1)+' ไม่ได้ ('+r.status+')');
+          var b=await r.arrayBuffer();got+=b.byteLength;bufs.push(b);
+          fill.style.width=Math.round(got/clip.size*100)+'%';say('กำลังโหลดไฟล์… '+Math.round(got/clip.size*100)+'%');
+        }
+        if(got!==clip.size)throw new Error('ขนาดไฟล์ไม่ครบ ('+got+' จาก '+clip.size+' ไบต์) ลองใหม่อีกครั้ง');
+        blob=new Blob(bufs,{type:'video/mp4'});
+        say('พร้อมแล้ว กดปุ่มด้านล่างเพื่อบันทึก','ok');btn.textContent='บันทึกลงเครื่อง ('+mb(clip.size)+')';
+      }catch(e){say(e.message||'โหลดไม่สำเร็จ ลองใหม่อีกครั้ง','bad');bar.hidden=true}
+      btn.disabled=false;
+    });
+    async function saveIt(){
+      btn.disabled=true;
+      var d=await dlP;
+      if(!d){say('หน้านี้บันทึกไฟล์ไม่ได้ในที่นี่ ลองเปิดจากแอป Claude หรือ claude.ai','bad');btn.disabled=false;return}
+      try{
+        var res=await d.save({filename:clip.file,data:blob});
+        say(res&&res.status==='saved'?'บันทึกแล้ว':'ส่งไฟล์แล้ว','ok');
+      }catch(e){
+        var code=e&&e.code,msg={declined:'ยังไม่ได้บันทึก (กดยกเลิก) กดปุ่มอีกครั้งเมื่อพร้อม',too_large:'ไฟล์ใหญ่เกินที่เครื่องนี้รับได้',rate_limited:'รอสักครู่แล้วกดใหม่'}[code];
+        say(msg||'บันทึกไม่สำเร็จ ('+(code||'ไม่ทราบสาเหตุ')+')','bad');
+      }
+      btn.disabled=false;
+    }
+    c.append(h,m,btn,bar,st);return c;
+  }
+
+  fetch('manifest.json').then(function(r){return r.json()}).then(function(m){
+    list.textContent='';
+    (m.clips||[]).slice().reverse().forEach(function(c){list.appendChild(card(c))});
+    if(!m.clips||!m.clips.length)list.appendChild(el('p','lead','ยังไม่มีคลิป'));
+  }).catch(function(){list.textContent='โหลดรายการไม่ได้ ลองรีเฟรชหน้านี้'});
+})();
+</script>
