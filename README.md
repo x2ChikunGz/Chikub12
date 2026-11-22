@@ -6,7 +6,7 @@
 
 
 ## ติดตั้ง / เครื่องมือใหม่ (tools/)
-- `bash tools/setup.sh` ติดตั้งครบ: ffmpeg, hyperframes@0.9.23, sherpa-onnx + playwright (python), โมเดล whisper small int8 (ลงที่ models/ ไม่อยู่ใน git)
+- `bash tools/setup.sh` ติดตั้งครบ: ffmpeg, hyperframes@0.9.80, sherpa-onnx + playwright (python), โมเดล whisper small int8 (ลงที่ models/ ไม่อยู่ใน git)
 - `bash tools/new_clip.sh <ชื่อ> <ไฟล์เสียง>` สร้าง clips/<ชื่อ> จากแม่แบบ scroll + แปลง wav + ถอดเสียงเป็น segs.txt + ใส่ความยาวใน mix.py ให้อัตโนมัติ
 - `python3 -I tools/transcribe.py <voice> [-33] [0.18]` ถอดเสียงทีละช่วง (แก้ปัญหาข้อความไทยถูกตัดท้ายแล้ว: max_tokens_per_second=40)
 - `bash tools/render.sh clips/<ชื่อ>` = build + เรนเดอร์พื้นหลัง + mix.py + mux.sh ต่อกันอัตโนมัติ รอ render.done
