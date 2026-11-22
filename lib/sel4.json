@@ -1,0 +1,313 @@
+{
+ "duration": 94,
+ "items": [
+  {
+   "t": 0.0,
+   "file": "music/suspense/dark_drone_loop.wav",
+   "id": "dark_drone_loop",
+   "vol": 0.07,
+   "fade_in": 1.5,
+   "fade_out": 0.5,
+   "hold": 7.7,
+   "loop": true,
+   "top": "music"
+  },
+  {
+   "t": 0.35,
+   "file": "sfx/impact/door_knock.wav",
+   "id": "door_knock",
+   "vol": 0.3,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 0.95,
+   "file": "sfx/impact/door_knock.wav",
+   "id": "door_knock",
+   "vol": 0.3,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 1.55,
+   "file": "sfx/impact/door_knock.wav",
+   "id": "door_knock",
+   "vol": 0.3,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 2.85,
+   "file": "sfx/object/door_creak.wav",
+   "id": "door_creak",
+   "vol": 0.22,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 6.0,
+   "file": "sfx/transition/riser.mp3",
+   "id": "riser",
+   "vol": 0.3,
+   "fade_in": 0.4,
+   "fade_out": 0.1,
+   "hold": 1.75,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 7.6,
+   "file": "sfx/impact/impact-bass-1.mp3",
+   "id": "impact-bass-1",
+   "vol": 0.55,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 8.7,
+   "file": "music/suspense/dark_drone_loop.wav",
+   "id": "dark_drone_loop",
+   "vol": 0.07,
+   "fade_in": 2,
+   "fade_out": 2,
+   "hold": 50.3,
+   "loop": true,
+   "top": "music"
+  },
+  {
+   "t": 27.0,
+   "file": "sfx/object/key_jingle.wav",
+   "id": "key_jingle",
+   "vol": 0.25,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 31.6,
+   "file": "sfx/object/pen_scribble.wav",
+   "id": "pen_scribble",
+   "vol": 0.22,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 38.9,
+   "file": "sfx/ui/pop.mp3",
+   "id": "pop",
+   "vol": 0.28,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 40.9,
+   "file": "sfx/ui/pop.mp3",
+   "id": "pop",
+   "vol": 0.28,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 42.8,
+   "file": "sfx/ui/pop.mp3",
+   "id": "pop",
+   "vol": 0.28,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 46.4,
+   "file": "sfx/object/clock_tick.wav",
+   "id": "clock_tick",
+   "vol": 0.3,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 47.33,
+   "file": "sfx/impact/impact-bass-2.mp3",
+   "id": "impact-bass-2",
+   "vol": 0.6,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 50.5,
+   "file": "sfx/ui/click.mp3",
+   "id": "click",
+   "vol": 0.45,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 52.5,
+   "file": "foley/human/heartbeat.wav",
+   "id": "heartbeat",
+   "vol": 0.3,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "foley"
+  },
+  {
+   "t": 53.55,
+   "file": "foley/human/heartbeat.wav",
+   "id": "heartbeat",
+   "vol": 0.3,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "foley"
+  },
+  {
+   "t": 53.6,
+   "file": "foley/human/snore.wav",
+   "id": "snore",
+   "vol": 0.28,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "foley"
+  },
+  {
+   "t": 57.45,
+   "file": "sfx/transition/glitch-3.mp3",
+   "id": "glitch-3",
+   "vol": 0.35,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 57.5,
+   "file": "sfx/impact/impact-bass-1.mp3",
+   "id": "impact-bass-1",
+   "vol": 0.5,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 59.4,
+   "file": "ambience/weather/wind_soft_loop.wav",
+   "id": "wind_soft_loop",
+   "vol": 0.12,
+   "fade_in": 1,
+   "fade_out": 1.5,
+   "hold": 11,
+   "loop": true,
+   "top": "ambience"
+  },
+  {
+   "t": 74.5,
+   "file": "music/suspense/dark_drone_loop.wav",
+   "id": "dark_drone_loop",
+   "vol": 0.08,
+   "fade_in": 1,
+   "fade_out": 0.5,
+   "hold": 19.5,
+   "loop": true,
+   "top": "music"
+  },
+  {
+   "t": 77.5,
+   "file": "sfx/transition/glitch-3.mp3",
+   "id": "glitch-3",
+   "vol": 0.3,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 83.4,
+   "file": "sfx/transition/riser.mp3",
+   "id": "riser",
+   "vol": 0.22,
+   "fade_in": 3,
+   "fade_out": 0.3,
+   "hold": 7.0,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 88.9,
+   "file": "sfx/transition/glitch-1.mp3",
+   "id": "glitch-1",
+   "vol": 0.4,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 90.5,
+   "file": "sfx/impact/impact-bass-2.mp3",
+   "id": "impact-bass-2",
+   "vol": 0.6,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  },
+  {
+   "t": 93.55,
+   "file": "sfx/impact/impact-bass-1.mp3",
+   "id": "impact-bass-1",
+   "vol": 0.5,
+   "fade_in": 0,
+   "fade_out": 0,
+   "hold": null,
+   "loop": false,
+   "top": "sfx"
+  }
+ ]
+}

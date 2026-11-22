@@ -1,0 +1,1314 @@
+{
+"duration": 102.7,
+"cues": [
+{
+"t": 0,
+"id": "dark_drone_loop",
+"action": "drone",
+"vol": 0.07,
+"fade_in": 1.0,
+"hold": 18.0,
+"fade_out": 0.8
+},
+{
+"t": 0.88,
+"id": "error",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 0.88,
+"id": "pop",
+"action": "ui",
+"vol": 0.2,
+"min_gap": 0.05
+},
+{
+"t": 1.3,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 1.97,
+"id": "error",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 1.97,
+"id": "pop",
+"action": "ui",
+"vol": 0.2,
+"min_gap": 0.05
+},
+{
+"t": 2.67,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 3.0,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.15
+},
+{
+"t": 5.55,
+"id": "pop",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 5.72,
+"id": "glitch-3",
+"action": "glitch",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 5.93,
+"id": "pop",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 6.31,
+"id": "pop",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 6.31,
+"id": "click",
+"action": "ui",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 6.69,
+"id": "pop",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 7.3,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.42,
+"min_gap": 0.05
+},
+{
+"t": 7.45,
+"id": "heartbeat",
+"action": "heartbeat",
+"vol": 0.3,
+"hold": 1.2,
+"fade_out": 0.3
+},
+{
+"t": 8.1,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 8.55,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 10.8,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 12.3,
+"id": "click",
+"action": "ui",
+"vol": 0.38,
+"min_gap": 0.05
+},
+{
+"t": 12.34,
+"id": "error",
+"action": "ui",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 13.3,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 14.85,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.35,
+"min_gap": 0.05
+},
+{
+"t": 14.88,
+"id": "glitch-1",
+"action": "glitch",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 14.97,
+"id": "error",
+"action": "ui",
+"vol": 0.26,
+"min_gap": 0.05
+},
+{
+"t": 16.55,
+"id": "riser",
+"action": "build",
+"vol": 0.28,
+"hold": 2.95,
+"fade_in": 0.5,
+"fade_out": 0.1
+},
+{
+"t": 19.15,
+"id": "whoosh-cinematic",
+"action": "transition",
+"vol": 0.3
+},
+{
+"t": 19.5,
+"id": "impact-bass-2",
+"action": "scare",
+"vol": 0.6
+},
+{
+"t": 19.5,
+"id": "glitch-3",
+"action": "glitch",
+"vol": 0.25,
+"min_gap": 0.05
+},
+{
+"t": 19.62,
+"id": "sparkle",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 20.95,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 22.95,
+"id": "ping",
+"action": "ui",
+"vol": 0.24
+},
+{
+"t": 23.4,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.16
+},
+{
+"t": 23.9,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.16
+},
+{
+"t": 24.4,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.16
+},
+{
+"t": 25.35,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 26.0,
+"id": "pop",
+"action": "ui",
+"vol": 0.11,
+"min_gap": 0.05
+},
+{
+"t": 26.24,
+"id": "pop",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.05
+},
+{
+"t": 26.48,
+"id": "pop",
+"action": "ui",
+"vol": 0.13,
+"min_gap": 0.05
+},
+{
+"t": 26.72,
+"id": "pop",
+"action": "ui",
+"vol": 0.11,
+"min_gap": 0.05
+},
+{
+"t": 26.96,
+"id": "pop",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.05
+},
+{
+"t": 27.2,
+"id": "pop",
+"action": "ui",
+"vol": 0.13,
+"min_gap": 0.05
+},
+{
+"t": 27.44,
+"id": "pop",
+"action": "ui",
+"vol": 0.11,
+"min_gap": 0.05
+},
+{
+"t": 27.68,
+"id": "pop",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.05
+},
+{
+"t": 27.92,
+"id": "pop",
+"action": "ui",
+"vol": 0.13,
+"min_gap": 0.05
+},
+{
+"t": 28.16,
+"id": "pop",
+"action": "ui",
+"vol": 0.11,
+"min_gap": 0.05
+},
+{
+"t": 28.4,
+"id": "pop",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.05
+},
+{
+"t": 28.64,
+"id": "pop",
+"action": "ui",
+"vol": 0.13,
+"min_gap": 0.05
+},
+{
+"t": 28.88,
+"id": "pop",
+"action": "ui",
+"vol": 0.11,
+"min_gap": 0.05
+},
+{
+"t": 29.12,
+"id": "pop",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.05
+},
+{
+"t": 30.5,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.2
+},
+{
+"t": 31.6,
+"id": "click",
+"action": "ui",
+"vol": 0.4,
+"min_gap": 0.05
+},
+{
+"t": 31.6,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.45,
+"min_gap": 0.05
+},
+{
+"t": 33.45,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 34.65,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 35.45,
+"id": "click",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 35.65,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 36.45,
+"id": "click",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 36.75,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 37.55,
+"id": "click",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 38.8,
+"id": "glitch-3",
+"action": "glitch",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 38.8,
+"id": "impact-bass-2",
+"action": "scare",
+"vol": 0.45
+},
+{
+"t": 40.6,
+"id": "click",
+"action": "ui",
+"vol": 0.4,
+"min_gap": 0.05
+},
+{
+"t": 41.6,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.2
+},
+{
+"t": 41.9,
+"id": "glitch-2",
+"action": "glitch",
+"vol": 0.16
+},
+{
+"t": 43.05,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 43.1,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 44.9,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.2
+},
+{
+"t": 45.7,
+"id": "notification",
+"action": "chat",
+"vol": 0.28
+},
+{
+"t": 45.72,
+"id": "pop",
+"action": "ui",
+"vol": 0.2,
+"min_gap": 0.05
+},
+{
+"t": 46.9,
+"id": "glitch-1",
+"action": "glitch",
+"vol": 0.25,
+"min_gap": 0.05
+},
+{
+"t": 46.95,
+"id": "error",
+"action": "ui",
+"vol": 0.28,
+"min_gap": 0.05
+},
+{
+"t": 48.4,
+"id": "dark_drone_loop",
+"action": "drone",
+"vol": 0.07,
+"fade_in": 0.6,
+"hold": 2.0,
+"fade_out": 0.4
+},
+{
+"t": 48.5,
+"id": "typing",
+"action": "ui",
+"vol": 0.15,
+"hold": 1.6,
+"fade_out": 0.2
+},
+{
+"t": 50.2,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.2
+},
+{
+"t": 50.3,
+"id": "glitch-3",
+"action": "glitch",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 52.15,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 55.95,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 56.2,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 56.45,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 56.7,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 56.95,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 57.2,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 57.6,
+"id": "notification",
+"action": "chat",
+"vol": 0.35
+},
+{
+"t": 57.65,
+"id": "error",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 59.4,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.4,
+"min_gap": 0.05
+},
+{
+"t": 62.85,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 64.35,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.2
+},
+{
+"t": 65.1,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.4,
+"min_gap": 0.05
+},
+{
+"t": 65.12,
+"id": "error",
+"action": "ui",
+"vol": 0.2,
+"min_gap": 0.05
+},
+{
+"t": 66.2,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.26,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.31,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.37,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.42,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.48,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.53,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.59,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.64,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.7,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.75,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.81,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.86,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.92,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 66.97,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.03,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.08,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.14,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.19,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.25,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.3,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.36,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.41,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.47,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.52,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.58,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.63,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.69,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.74,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 67.8,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.12,
+"min_gap": 0.04
+},
+{
+"t": 68.6,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 68.65,
+"id": "glitch-1",
+"action": "glitch",
+"vol": 0.25,
+"min_gap": 0.05
+},
+{
+"t": 72.25,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 74.24,
+"id": "sparkle",
+"action": "ui",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 74.3,
+"id": "ping",
+"action": "ui",
+"vol": 0.22
+},
+{
+"t": 76.0,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 78.15,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 79.9,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.25
+},
+{
+"t": 80.1,
+"id": "glitch-2",
+"action": "glitch",
+"vol": 0.14
+},
+{
+"t": 80.5,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.4,
+"min_gap": 0.05
+},
+{
+"t": 80.5,
+"id": "sparkle",
+"action": "ui",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 80.55,
+"id": "ping",
+"action": "ui",
+"vol": 0.24
+},
+{
+"t": 81.95,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 82.1,
+"id": "typing",
+"action": "ui",
+"vol": 0.12,
+"hold": 1.8,
+"fade_out": 0.2
+},
+{
+"t": 84.0,
+"id": "sparkle",
+"action": "ui",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 84.0,
+"id": "chime",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 85.0,
+"id": "key-press",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 85.22,
+"id": "key-press",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 85.44,
+"id": "key-press",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 85.66,
+"id": "key-press",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 85.88,
+"id": "key-press",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 86.1,
+"id": "key-press",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 86.3,
+"id": "sparkle",
+"action": "ui",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 86.3,
+"id": "chime",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 86.75,
+"id": "swoosh_in",
+"action": "transition",
+"vol": 0.24
+},
+{
+"t": 87.8,
+"id": "sparkle",
+"action": "ui",
+"vol": 0.26,
+"min_gap": 0.05
+},
+{
+"t": 87.9,
+"id": "chime",
+"action": "ui",
+"vol": 0.2,
+"min_gap": 0.05
+},
+{
+"t": 89.82,
+"id": "notification",
+"action": "chat",
+"vol": 0.35
+},
+{
+"t": 89.85,
+"id": "error",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+},
+{
+"t": 91.6,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.35,
+"min_gap": 0.05
+},
+{
+"t": 92.1,
+"id": "heartbeat",
+"action": "heartbeat",
+"vol": 0.3,
+"hold": 1.4,
+"fade_out": 0.3
+},
+{
+"t": 92.95,
+"id": "error",
+"action": "ui",
+"vol": 0.25,
+"min_gap": 0.05
+},
+{
+"t": 93.0,
+"id": "glitch-3",
+"action": "glitch",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 93.2,
+"id": "impact-bass-1",
+"action": "scare",
+"vol": 0.3,
+"min_gap": 0.05
+},
+{
+"t": 95.6,
+"id": "dark_drone_loop",
+"action": "drone",
+"vol": 0.05,
+"fade_in": 1.0,
+"hold": 3.0,
+"fade_out": 1.0
+},
+{
+"t": 95.6,
+"id": "pop",
+"action": "ui",
+"vol": 0.22,
+"min_gap": 0.05
+},
+{
+"t": 95.7,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 95.78,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 95.86,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 95.94,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.02,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.1,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.18,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.26,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.34,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.42,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.5,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.58,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.66,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.74,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.82,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.9,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 96.98,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.06,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.14,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.22,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.3,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.38,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.46,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.54,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.62,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.7,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.78,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.86,
+"id": "click-soft",
+"action": "ui",
+"vol": 0.1,
+"min_gap": 0.05
+},
+{
+"t": 97.95,
+"id": "ping",
+"action": "ui",
+"vol": 0.24
+},
+{
+"t": 98.25,
+"id": "whoosh-short",
+"action": "transition",
+"vol": 0.17
+},
+{
+"t": 99.5,
+"id": "notification",
+"action": "chat",
+"vol": 0.28
+},
+{
+"t": 99.52,
+"id": "sparkle",
+"action": "ui",
+"vol": 0.28,
+"min_gap": 0.05
+},
+{
+"t": 99.7,
+"id": "chime",
+"action": "ui",
+"vol": 0.2,
+"min_gap": 0.05
+},
+{
+"t": 100.5,
+"id": "impact-bass-2",
+"action": "scare",
+"vol": 0.34
+},
+{
+"t": 100.6,
+"id": "chime",
+"action": "ui",
+"vol": 0.24,
+"min_gap": 0.05
+}
+]
+}

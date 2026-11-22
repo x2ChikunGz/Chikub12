@@ -1,0 +1,7 @@
+models/
+**/voice.wav
+**/mix.wav
+**/silent.mp4
+**/render.log
+**/render.done
+**/node_modules/

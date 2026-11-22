@@ -1,0 +1,592 @@
+{
+ "sounds": [
+  {
+   "id": "breath",
+   "filename": "foley/human/breath.wav",
+   "category": "foley/human",
+   "tags": [
+    "breath",
+    "breathing"
+   ],
+   "description": "Soft breath in/out",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Quiet close-up",
+   "duration": 3.0
+  },
+  {
+   "id": "heartbeat",
+   "filename": "foley/human/heartbeat.wav",
+   "category": "foley/human",
+   "tags": [
+    "heartbeat",
+    "fear",
+    "tension"
+   ],
+   "description": "Double heartbeat thump",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Fear / building dread",
+   "duration": 0.5
+  },
+  {
+   "id": "snore",
+   "filename": "foley/human/snore.wav",
+   "category": "foley/human",
+   "tags": [
+    "snore",
+    "sleep",
+    "breath"
+   ],
+   "description": "Slow snore",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Sleeping person",
+   "duration": 2.2
+  },
+  {
+   "id": "footstep_wood",
+   "filename": "foley/footsteps/footstep_wood.wav",
+   "category": "foley/footsteps",
+   "tags": [
+    "footstep",
+    "wood",
+    "walk"
+   ],
+   "description": "One footstep on wooden floor",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Walking indoors; repeat with 0.45 s gaps",
+   "duration": 0.2
+  },
+  {
+   "id": "dark_drone_loop",
+   "filename": "music/suspense/dark_drone_loop.wav",
+   "category": "music/suspense",
+   "tags": [
+    "drone",
+    "dark",
+    "suspense",
+    "loop"
+   ],
+   "description": "14 s looping dark drone",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Under horror scenes, low volume",
+   "duration": 13.6
+  },
+  {
+   "id": "pegasus_bed",
+   "filename": "music/suspense/pegasus_bed.wav",
+   "category": "music/suspense",
+   "tags": [
+    "pegasus_bed",
+    "music",
+    "suspense",
+    "bed",
+    "loop"
+   ],
+   "description": "102.7 s self-synthesized cold cyber-thriller bed (numpy): kick, bass, pad, arp, hats",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Music bed under whole Pegasus clip, low volume",
+   "duration": 102.7
+  },
+  {
+   "id": "watch_bed",
+   "filename": "music/suspense/watch_bed.wav",
+   "category": "music/suspense",
+   "tags": [
+    "watch_bed",
+    "music",
+    "suspense",
+    "horror",
+    "drone",
+    "bed"
+   ],
+   "description": "102.4 s self-synthesized horror bed (numpy): detuned low drone, tritone, wind noise, high ringing tone, sub throbs, intensity follows the clip",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Music bed under the 'being watched' horror clip",
+   "duration": 102.4
+  },
+  {
+   "id": "wind_soft_loop",
+   "filename": "ambience/weather/wind_soft_loop.wav",
+   "category": "ambience/weather",
+   "tags": [
+    "wind",
+    "loop",
+    "cold"
+   ],
+   "description": "12 s looping soft wind",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Snow / outdoor / empty calm scene",
+   "duration": 11.6
+  },
+  {
+   "id": "chime",
+   "filename": "sfx/ui/chime.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "chime",
+    "success"
+   ],
+   "description": "Real chime",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Success / end",
+   "duration": 2.544
+  },
+  {
+   "id": "click-soft",
+   "filename": "sfx/ui/click-soft.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "click",
+    "tick"
+   ],
+   "description": "Real soft click",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Counter tick",
+   "duration": 0.366
+  },
+  {
+   "id": "click",
+   "filename": "sfx/ui/click.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "click",
+    "ui",
+    "switch"
+   ],
+   "description": "Crisp click",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Light switch / tap",
+   "duration": 0.366
+  },
+  {
+   "id": "error",
+   "filename": "sfx/ui/error.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "error",
+    "denied",
+    "blocked",
+    "ui"
+   ],
+   "description": "Real error tone",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Blocked / denied action",
+   "duration": 1.62
+  },
+  {
+   "id": "key-press",
+   "filename": "sfx/ui/key-press.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "key",
+    "typing"
+   ],
+   "description": "Real key press",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Typing digits",
+   "duration": 0.432
+  },
+  {
+   "id": "message_pop",
+   "filename": "sfx/ui/message_pop.wav",
+   "category": "sfx/ui",
+   "tags": [
+    "message",
+    "chat",
+    "pop",
+    "phone"
+   ],
+   "description": "Soft chat bubble pop",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Chat message appears",
+   "duration": 0.25
+  },
+  {
+   "id": "notification",
+   "filename": "sfx/ui/notification.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "notification",
+    "message",
+    "alert",
+    "ui"
+   ],
+   "description": "Real notification chime",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Incoming message / alert",
+   "duration": 2.455
+  },
+  {
+   "id": "ping",
+   "filename": "sfx/ui/ping.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "ping",
+    "ui",
+    "confirm"
+   ],
+   "description": "Real soft ping",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Confirmation / success",
+   "duration": 1.32
+  },
+  {
+   "id": "pop",
+   "filename": "sfx/ui/pop.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "pop",
+    "ui",
+    "chat",
+    "message"
+   ],
+   "description": "Real UI pop",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Chat bubble appears",
+   "duration": 0.72
+  },
+  {
+   "id": "sparkle",
+   "filename": "sfx/ui/sparkle.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "sparkle",
+    "success",
+    "magic"
+   ],
+   "description": "Real sparkle",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Success / good news",
+   "duration": 1.802
+  },
+  {
+   "id": "typing",
+   "filename": "sfx/ui/typing.mp3",
+   "category": "sfx/ui",
+   "tags": [
+    "typing"
+   ],
+   "description": "Real typing",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Typing",
+   "duration": 1.541
+  },
+  {
+   "id": "clock_tick",
+   "filename": "sfx/object/clock_tick.wav",
+   "category": "sfx/object",
+   "tags": [
+    "clock",
+    "tick"
+   ],
+   "description": "Single clock tick",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Wall clock; repeat once per second",
+   "duration": 0.05
+  },
+  {
+   "id": "door_creak",
+   "filename": "sfx/object/door_creak.wav",
+   "category": "sfx/object",
+   "tags": [
+    "door",
+    "open",
+    "creak"
+   ],
+   "description": "Slow wooden door creak",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Door opening slowly",
+   "duration": 0.9
+  },
+  {
+   "id": "key_jingle",
+   "filename": "sfx/object/key_jingle.wav",
+   "category": "sfx/object",
+   "tags": [
+    "key",
+    "metal",
+    "jingle"
+   ],
+   "description": "Small bright key jingle",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Key close-up",
+   "duration": 1.6
+  },
+  {
+   "id": "light_switch",
+   "filename": "sfx/object/light_switch.wav",
+   "category": "sfx/object",
+   "tags": [
+    "switch",
+    "light",
+    "click"
+   ],
+   "description": "Plastic light switch click",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Light on/off",
+   "duration": 0.06
+  },
+  {
+   "id": "paper_rustle",
+   "filename": "sfx/object/paper_rustle.wav",
+   "category": "sfx/object",
+   "tags": [
+    "paper",
+    "rustle",
+    "document"
+   ],
+   "description": "Paper handling",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Contract / paper insert",
+   "duration": 0.8
+  },
+  {
+   "id": "pen_scribble",
+   "filename": "sfx/object/pen_scribble.wav",
+   "category": "sfx/object",
+   "tags": [
+    "pen",
+    "scribble",
+    "write"
+   ],
+   "description": "Pen scribbling",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Writing a signature",
+   "duration": 0.8
+  },
+  {
+   "id": "door_knock",
+   "filename": "sfx/impact/door_knock.wav",
+   "category": "sfx/impact",
+   "tags": [
+    "door",
+    "knock",
+    "impact"
+   ],
+   "description": "Three-knock-ready single knock on wood door",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Someone knocking at a door; suspense or neutral",
+   "duration": 0.28
+  },
+  {
+   "id": "glitch-2",
+   "filename": "sfx/impact/glitch-2.mp3",
+   "category": "sfx/impact",
+   "tags": [
+    "glitch"
+   ],
+   "description": "Real glitch",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Glitch accent",
+   "duration": 3.504
+  },
+  {
+   "id": "glitch_zap",
+   "filename": "sfx/impact/glitch_zap.wav",
+   "category": "sfx/impact",
+   "tags": [
+    "glitch",
+    "zap",
+    "scare"
+   ],
+   "description": "Short digital zap",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Visual glitch / RGB split frame",
+   "duration": 0.25
+  },
+  {
+   "id": "impact-bass-1",
+   "filename": "sfx/impact/impact-bass-1.mp3",
+   "category": "sfx/impact",
+   "tags": [
+    "bass",
+    "impact",
+    "hit",
+    "scare"
+   ],
+   "description": "Real bass impact hit",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Scare / reveal landing",
+   "duration": 2.116
+  },
+  {
+   "id": "impact-bass-2",
+   "filename": "sfx/impact/impact-bass-2.mp3",
+   "category": "sfx/impact",
+   "tags": [
+    "bass",
+    "impact",
+    "hit",
+    "scare",
+    "swell"
+   ],
+   "description": "Bass impact with short swell",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Bigger reveal",
+   "duration": 2.592
+  },
+  {
+   "id": "impact_low_boom",
+   "filename": "sfx/impact/impact_low_boom.wav",
+   "category": "sfx/impact",
+   "tags": [
+    "boom",
+    "hit",
+    "scare",
+    "impact"
+   ],
+   "description": "Low sub-bass hit",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Hard cut, scare moment, lights out",
+   "duration": 1.4
+  },
+  {
+   "id": "glitch-1",
+   "filename": "sfx/transition/glitch-1.mp3",
+   "category": "sfx/transition",
+   "tags": [
+    "glitch",
+    "digital",
+    "hit"
+   ],
+   "description": "Punchy digital glitch",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Hard-cut glitch accent",
+   "duration": 2.638
+  },
+  {
+   "id": "glitch-3",
+   "filename": "sfx/transition/glitch-3.mp3",
+   "category": "sfx/transition",
+   "tags": [
+    "glitch",
+    "digital",
+    "subtle"
+   ],
+   "description": "Low-key glitch texture",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Subtle glitch under other audio",
+   "duration": 3.096
+  },
+  {
+   "id": "riser",
+   "filename": "sfx/transition/riser.mp3",
+   "category": "sfx/transition",
+   "tags": [
+    "riser",
+    "tension",
+    "build",
+    "real"
+   ],
+   "description": "10 s real riser",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Trim with hold/fade; peak at the scare",
+   "duration": 10.032
+  },
+  {
+   "id": "riser_tension",
+   "filename": "sfx/transition/riser_tension.wav",
+   "category": "sfx/transition",
+   "tags": [
+    "riser",
+    "tension",
+    "build"
+   ],
+   "description": "3 s rising tension",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Before a scare",
+   "duration": 3.0
+  },
+  {
+   "id": "swoosh_in",
+   "filename": "sfx/transition/swoosh_in.wav",
+   "category": "sfx/transition",
+   "tags": [
+    "swoosh",
+    "whoosh",
+    "transition"
+   ],
+   "description": "Short air swoosh",
+   "license": "CC0-1.0 (original, synthesized for this project)",
+   "attribution": "none required",
+   "recommended_usage": "Scene transition (use sparingly)",
+   "duration": 0.5
+  },
+  {
+   "id": "whoosh-cinematic",
+   "filename": "sfx/transition/whoosh-cinematic.mp3",
+   "category": "sfx/transition",
+   "tags": [
+    "whoosh",
+    "cinematic"
+   ],
+   "description": "Real cinematic whoosh",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Title reveal",
+   "duration": 5.544
+  },
+  {
+   "id": "whoosh-short",
+   "filename": "sfx/transition/whoosh-short.mp3",
+   "category": "sfx/transition",
+   "tags": [
+    "whoosh",
+    "transition",
+    "swoosh"
+   ],
+   "description": "Real short whoosh",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Quick transition",
+   "duration": 0.575
+  },
+  {
+   "id": "whoosh",
+   "filename": "sfx/transition/whoosh.mp3",
+   "category": "sfx/transition",
+   "tags": [
+    "whoosh"
+   ],
+   "description": "Real whoosh",
+   "license": "Pixabay Content License (bundled with HyperFrames media-use skill)",
+   "attribution": "Pixabay (no attribution required)",
+   "recommended_usage": "Transition",
+   "duration": 0.575
+  }
+ ]
+}

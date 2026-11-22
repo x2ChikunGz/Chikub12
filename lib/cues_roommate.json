@@ -1,0 +1,15 @@
+{"duration":94,"cues":[
+{"t":0.35,"action":"knock"},{"t":0.95,"action":"knock","min_gap":0.1},{"t":1.55,"action":"knock","min_gap":0.1},
+{"t":2.85,"action":"door_open"},{"t":6.0,"action":"build"},{"t":7.6,"action":"scare"},
+{"t":0.0,"action":"drone","vol":0.10,"fade_in":1.5,"hold":7.7,"fade_out":0.5},
+{"t":8.7,"action":"drone","vol":0.10,"fade_in":1.5,"hold":50.3,"fade_out":1.5},
+{"t":27.0,"action":"key"},{"t":29.8,"action":"paper"},{"t":31.55,"action":"write"},
+{"t":38.9,"action":"chat"},{"t":39.9,"action":"chat","min_gap":0.1},{"t":40.9,"action":"chat","min_gap":0.1},{"t":41.9,"action":"chat","min_gap":0.1},{"t":42.8,"action":"chat","min_gap":0.1},{"t":43.7,"action":"chat","min_gap":0.1},
+{"t":45.5,"action":"build"},{"t":46.4,"action":"clock"},{"t":47.33,"action":"scare"},
+{"t":50.5,"action":"light_switch"},
+{"t":52.4,"action":"heartbeat"},{"t":53.45,"action":"heartbeat","min_gap":0.1},
+{"t":53.6,"action":"sleep"},{"t":55.9,"action":"sleep"},
+{"t":57.45,"action":"scare"},
+{"t":59.4,"action":"wind","vol":0.14,"fade_in":1,"hold":11,"fade_out":1.5,"mood":"calm"},
+{"t":74.5,"action":"drone","vol":0.11,"fade_in":1,"hold":19.5,"fade_out":0.5},
+{"t":77.5,"action":"scare"},{"t":88.9,"action":"glitch"},{"t":90.5,"action":"scare"},{"t":93.55,"action":"scare"}]}
