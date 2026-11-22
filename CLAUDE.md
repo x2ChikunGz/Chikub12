@@ -11,9 +11,9 @@
 6. **video-qa** (สกิล video-qa / `tools/video_qa.py`) ต้อง PASS ก่อน SendUserFile → ส่ง mp4 + แคปชั่นโพสต์ (บรรทัดแรกดึงคน, เนื้อหา, คำถามชวนคอมเมนต์, แฮชแท็ก 3 อัน)
 
 ## ส่งคลิปให้ชิ (Drive อัปไฟล์ใหญ่ไม่ได้ จำกัด 10 MB; ปุ่มโหลดในแชตไม่ขึ้น)
-- ใช้หน้าโหลดบน Artifact: https://claude.ai/artifact/AH2A88aZWwQSPP9TaiZAuh (ซอร์สใน `site/`) ชิกด "เตรียมไฟล์" แล้ว "บันทึกลงเครื่อง"
+- ใช้หน้าโหลดบน Artifact (ซอร์สใน `site/`; หน้าเดิมถูกลบแล้วตามที่ชิสั่ง ต้อง publish ใหม่ทุกครั้งที่ส่งคลิป แล้วได้ลิงก์ใหม่) ชิกด "เตรียมไฟล์" แล้ว "บันทึกลงเครื่อง"
 - **ชิสั่ง: ทุกคลิปส่งไฟล์ hq ให้โหลดผ่านหน้านี้** (ไม่ต้องส่งไฟล์เล็กในแชตเป็นหลัก)
-- คลิปใหม่: encode hq = `ffmpeg -c:v libx264 -preset slow -crf 18 -maxrate 6500k -bufsize 13000k -profile:v high -pix_fmt yuv420p -c:a copy -movflags +faststart` (~65-70 MB) → `bash tools/make_dl_parts.sh <mp4> <ชื่อ> <outdir>` → เพิ่มรายการใน `site/manifest.json` → publish ด้วย `url` ของหน้า (ไฟล์ใหม่ ≤64MB ต่อครั้ง, ชิ้นละ ≤15MB) → เช็กรายการไฟล์ → ส่งลิงก์ให้ชิ
+- คลิปใหม่: encode hq = `ffmpeg -c:v libx264 -preset slow -crf 18 -maxrate 6500k -bufsize 13000k -profile:v high -pix_fmt yuv420p -c:a copy -movflags +faststart` (~65-70 MB) → `bash tools/make_dl_parts.sh <mp4> <ชื่อ> <outdir>` → เพิ่มรายการใน `site/manifest.json` → publish หน้า `site/index.html` + manifest + ชิ้นส่วน (≤64MB ต่อครั้ง ครั้งต่อไปใส่ `url` ที่ได้, ชิ้นละ ≤15MB) → เช็กรายการไฟล์ → ส่งลิงก์ให้ชิ
 - สำรอง: ส่งไฟล์ ~37 MB ในแชตด้วย SendUserFile (display attach)
 
 ## กฎ
