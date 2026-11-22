@@ -6,3 +6,5 @@ models/
 **/render.done
 **/node_modules/
 **/work-*/
+clips/*/*.mp4
+clips/*/contact.jpg

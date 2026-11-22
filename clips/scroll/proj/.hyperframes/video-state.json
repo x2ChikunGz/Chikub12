@@ -59,5 +59,16 @@
     "latest": null,
     "revisions": {},
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "95155e21-27bf-4593-b66a-37cd4622045e",
+      "completedAt": 1795323862001,
+      "output": "/home/user/Chikub12/clips/scroll/silent.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
 }
