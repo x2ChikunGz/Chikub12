@@ -19,7 +19,9 @@ chk(f'duration <= {o.max_dur:.0f}s (ถ้าเกินต้องแจ้�
 # loudness
 ln=run(['ffmpeg','-nostats','-i',f,'-af','ebur128=peak=true','-f','null','-']).stderr
 I=re.findall(r'I:\s+(-?[\d.]+) LUFS',ln);TP=re.findall(r'Peak:\s+(-?[\d.]+) dBFS',ln)
-if I:chk('loudness -16..-12 LUFS',-16<=float(I[-1])<=-12,f'{I[-1]} LUFS')
+if I:chk('loudness -20..-13 LUFS (ref: promptkub -18..-20)',-20<=float(I[-1])<=-13,f'{I[-1]} LUFS')
+LRA=re.findall(r'LRA:\s+(-?[\d.]+) LU',ln)
+if LRA:chk('dynamics LRA >= 6 LU (quiet -> loud)',float(LRA[-1])>=6,f'{LRA[-1]} LU',hard=False)
 if TP:chk('true peak <= -1.0 dBTP',float(TP[-1])<=-1.0,f'{TP[-1]} dBTP')
 # black / frozen
 bl=run(['ffmpeg','-nostats','-i',f,'-vf','blackdetect=d=0.5:pix_th=0.06','-an','-f','null','-']).stderr

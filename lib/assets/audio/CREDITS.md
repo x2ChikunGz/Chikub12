@@ -52,3 +52,14 @@
 | openverse/cat_hiss_22db7666.wav | CC0 1.0 | Cat hissing - Zabuhailo by Zabuhailo (https://commons.wikimedia.org/w/index.php?curid=31903363) |
 | openverse/phone_vibrate_f217c877.mp3 | CC0 1.0 | cell phone vibrate glass_loopable.wav by mobaudio (https://freesound.org/people/mobaudio/sounds/384487) |
 | openverse/cloth_slide_baece873.mp3 | CC0 1.0 | 37-cloth.wav by tilano408 (https://freesound.org/people/tilano408/sounds/445670) |
+| openverse/suspense_strings_b22c3e69.mp3 | CC0 1.0 | Suspenseful Strings Music 01 by Magmi.Soundtracks (https://freesound.org/people/Magmi.Soundtracks/sounds/475737) |
+| openverse/horror_ambient_34564eb0.mp3 | CC0 1.0 | Horror Ambient by mr45 (https://freesound.org/people/mr45/sounds/492956) |
+| openverse/dark_cinematic_music_b9c414ed.mp3 | CC0 1.0 | Suspense Motif by jhumbucker (https://freesound.org/people/jhumbucker/sounds/250542) |
+| openverse/creepy_music_box_1a3e86e4.mp3 | CC0 1.0 | Music Box.wav by Rickbrewin (https://freesound.org/people/Rickbrewin/sounds/158206) |
+| openverse/thunder_79b7d9cd.mp3 | CC0 1.0 | Thunder by Fission9 (https://freesound.org/people/Fission9/sounds/465314) |
+| openverse/footsteps_wood_floor_27ecb09a.mp3 | CC0 1.0 | R22-31-Footsteps Wood Floor with Creaks.wav by craigsmith (https://freesound.org/people/craigsmith/sounds/480670) |
+| openverse/door_creak_83976ac4.mp3 | CC0 1.0 | Door - Creak 02.wav by JarredGibb (https://freesound.org/people/JarredGibb/sounds/219492) |
+| openverse/door_creak_22283eb6.mp3 | CC0 1.0 | The Door Creaks: You're Not Alone.wav by MATRIXXX_ (https://freesound.org/people/MATRIXXX_/sounds/704612) |
+| openverse/horror_stinger_bc0736d4.mp3 | BY 4.0 | Horror Stinger 12.wav by F.M.Audio (https://freesound.org/people/F.M.Audio/sounds/614717) |
+| openverse/rain_on_roof_97cc535b.mp3 | CC0 1.0 | Raining on roof by Duasun (https://freesound.org/people/Duasun/sounds/468024) |
+| openverse/night_rain_97bb5ca0.mp3 | CC0 1.0 | City night rain stereo 1.wav by itinerantmonk108 (https://freesound.org/people/itinerantmonk108/sounds/573204) |

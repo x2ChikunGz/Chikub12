@@ -20,3 +20,7 @@ clips/*/qa_frames/
 clips/*/qa_contact.jpg
 clips/*/qa_report.json
 clips/*/frames/
+clips/*/mix2_raw.wav
+clips/*/silent2.mp4
+clips/*/render2.*
+clips/*/proj2/.hyperframes/
