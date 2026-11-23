@@ -16,7 +16,7 @@
 
 ## ส่งคลิปให้ชิ (Drive อัปไฟล์ใหญ่ไม่ได้ จำกัด 10 MB; ปุ่มโหลดในแชตไม่ขึ้น)
 - ใช้หน้าโหลดบน Artifact (ซอร์สใน `site/`; หน้าเดิมถูกลบแล้วตามที่ชิสั่ง ต้อง publish ใหม่ทุกครั้งที่ส่งคลิป แล้วได้ลิงก์ใหม่) ชิกด "เตรียมไฟล์" แล้ว "บันทึกลงเครื่อง"
-- **ชิสั่ง: ทุกคลิปส่งไฟล์ hq ให้โหลดผ่านหน้านี้** (ไม่ต้องส่งไฟล์เล็กในแชตเป็นหลัก)
+- **ชิสั่งล่าสุด: ส่งคลิปเป็นไฟล์ในแชตเลย (SendUserFile display attach) ไม่ใช้หน้า Artifact** ส่ง hq + ไฟล์สำรอง ~30 MB (ไฟล์ 37 MB เคยโหลดได้, 67 MB เคยโหลดไม่ได้)
 - คลิปใหม่: encode hq = `tools/encode_hq.sh` (ภายในคือ `ffmpeg -c:v libx264 -preset slow -crf 18 -maxrate 6500k -bufsize 13000k -profile:v high -pix_fmt yuv420p -c:a copy -movflags +faststart` + ปกเฟรมแรก) (~65-70 MB) → `bash tools/make_dl_parts.sh <mp4> <ชื่อ> <outdir>` → เพิ่มรายการใน `site/manifest.json` → publish หน้า `site/index.html` + manifest + ชิ้นส่วน (≤64MB ต่อครั้ง ครั้งต่อไปใส่ `url` ที่ได้, ชิ้นละ ≤15MB) → เช็กรายการไฟล์ → ส่งลิงก์ให้ชิ
 - สำรอง: ส่งไฟล์ ~37 MB ในแชตด้วย SendUserFile (display attach)
 
