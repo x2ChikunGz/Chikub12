@@ -1,0 +1,20 @@
+[
+ [["บ้านไม้หลังนี้","This wooden house",0],["ไม่มีใครอยู่มา 20 ปี","has been empty for 20 years",1]],
+ [["แต่คืนนี้","But tonight",0],["มีแสงลอดออกมาจากหน้าต่าง","light leaks from a window",2]],
+ [["ใครอยู่ในบ้านยายเหรอ","Who's in Grandma's house?",1]],
+ [["ฝน กลับมาเก็บของของยาย","Fon came back for Grandma's things",0],["ที่เพิ่งเสียไปเมื่อเดือนก่อน","she passed away last month",0]],
+ [["หนูฝน อย่าเข้าไปตอนกลางคืนนะลูก","Fon, don't go in at night",1]],
+ [["ทำไมล่ะป้า","Why, Auntie?",1]],
+ [["เมื่อ 20 ปีก่อน มีคนตายในบ้านหลังนั้น","20 years ago, someone died in that house",1],["แล้วไม่มีใครรู้ว่าใครทำ","and no one knows who did it",2]],
+ [["ประตูบ้าน ไม่ได้ล็อก","The door isn't locked",2]],
+ [["ในห้องรับแขก ทีวีจอตู้เครื่องเก่าเปิดอยู่","In the living room, an old TV is on",0],["ทั้งที่บ้านนี้ถูกตัดไฟมา 20 ปี","though the power was cut 20 years ago",2]],
+ [["ปฏิทินบนผนัง ยังค้างอยู่","The wall calendar is still stuck",0],["ที่วันเดียวกับ วันที่มีคนตาย","on the day someone died",1]],
+ [["นาฬิกาแขวน หยุดเดินที่","The wall clock stopped at",0],["ตีสองสิบเจ็ดนาที","2:17 AM",1]],
+ [["ตีสองสิบเจ็ด ตอนนี้ก็…","2:17... and right now it's...",1]],
+ [["และนี่คือจุดที่ทุกอย่าง","And this is where everything",0],["เริ่มผิดพลาด","starts to go wrong",2]],
+ [["จอทีวีที่เคยซ่า หยุดนิ่ง","The static on the TV stops",0]],
+ [["ภาพที่ขึ้นมา คือห้องนี้","The picture shows this room",0],["มีฝนยืนอยู่","with Fon standing in it",1]],
+ [["และมีใครอีกคน","and someone else",0],["ยืนอยู่ข้างหลังเธอ","is standing behind her",2]],
+ [["กลับมาแล้วเหรอ…","You're back...?",2]],
+ [["ติดตามตอนต่อไป","To be continued",1],["เรื่องสงสัย","@เรื่องสงสัย",0]]
+]
